@@ -1,0 +1,38 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  padding: 15px;
+}
+
+.block {
+  background-color: aliceblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 4px;
+}
+.block:hover {
+  background-color: antiquewhite;
+  cursor: pointer;
+}
+#hidden {
+  display: none;
+}
+.popup {
+  background-color: cornsilk;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  top: 300px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 500px;
+  width: 500px;
+}
+#popup-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
